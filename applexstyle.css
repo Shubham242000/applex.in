@@ -96,8 +96,19 @@ img{
     align-self: center;
     /* width: 30%; */
 }
-
-
+#footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer a{
+    color: black;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: crimson;
+}
 @media screen and (max-width: 800px) {
     .block {
 
