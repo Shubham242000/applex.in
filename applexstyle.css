@@ -34,6 +34,13 @@ nav{
 /* .col-4{
     border: 2px solid black;
 } */
+.tag{
+    background-color: rgb(197, 30, 63);
+    color: white;
+    padding: 2%;
+    text-align: center;
+}
+
 .box {
     display: flex;
 
@@ -97,10 +104,13 @@ img{
     /* width: 30%; */
 }
 #footer{
-    background-color: black;
+    background-color: rgb(197, 30, 63);
     color: white;
     padding: 20px;
     text-align: center;
+}
+.footer{
+    background-color: #eee;
 }
 .footer a{
     color: black;
