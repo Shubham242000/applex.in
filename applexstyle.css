@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Oxygen:wght@300;400;700&family=Roboto&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Oxygen';
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
@@ -24,21 +30,40 @@
     box-sizing: border-box;
 }
 #logo{
-    width: 60px;
+    width: 40px;
 }
 nav{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 15px rgba(194, 188, 188);
     
 }
+
+.counter .col-md-2:hover{
+    box-shadow: 0 0 15px #eee;
+    
+}
+
+i{
+    font-size: 40px;
+    color: rgb(128, 0, 79);
+}
+
 /* .col-4{
     border: 2px solid black;
 } */
 .tag{
-    background-color: rgb(197, 30, 63);
-    color: white;
+    
+    
+    
     padding: 2%;
     text-align: center;
+}
+.tag h1{
+    background: linear-gradient(rgb(255, 65, 65), rgb(34, 3, 34));
+
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .box {
