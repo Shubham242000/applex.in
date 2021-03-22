@@ -189,25 +189,35 @@ img{
 @media screen and (max-width: 450px) {
     .block {
 
-        width: 75px;
+        /* width: 75px;
         height: 3rem;
         padding: 1px;
-        margin: 0.1rem;
+        margin: 0.5rem; */
+      
+    
+    
+        width: 100px;
+        height: 4rem;
+        background-color: white;
+        margin: 0.5rem;
         border-radius: 20px;
-        box-shadow: 0 0 15px #eee;
+        box-shadow: 0 0 10px #eee;
+        padding: 10px;
+    }
+    .first,.second{
+        display: none;
     }
 
 }
 @media screen and (max-width: 350px) {
     .block {
-
-        padding: 1px;
-        width: 55px;
-        height: 3rem;
-
-        margin: 0.1rem;
+        width: 80px;
+        height: 4rem;
+        background-color: white;
+        margin: 0.3rem;
         border-radius: 20px;
-        box-shadow: 0 0 15px #eee;
+        box-shadow: 0 0 10px #eee;
+        padding: 8px;
     }
 
 }
