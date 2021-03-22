@@ -30,18 +30,28 @@ body {
     box-sizing: border-box;
 }
 #logo{
-    width: 40px;
+    width: 35px;
 }
 nav{
     background-color: rgba(255, 255, 255, 1);
+}
+.shadow-nav{
     box-shadow: 0 0 15px rgba(194, 188, 188);
-    
 }
 
 .counter .col-md-2:hover{
     box-shadow: 0 0 15px #eee;
     
 }
+
+.city{
+    /* background-image: url(./applex\ assets/city.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    
+}
+
 
 i{
     font-size: 40px;
@@ -68,18 +78,24 @@ i{
 
 .box {
     display: flex;
-
+    align-items: center;
     justify-content: center;
 
 }
 .brick{
      /* border: 1px solid black; */
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
 }
 .brick:hover{
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 15px #eee;
 }
 .brick img{
-    width: 50%;
+    width: 20%;
 }
 .contact{
     background-color: crimson;
@@ -90,12 +106,13 @@ i{
 
 .block {
 
-    width: 150px;
+    width: 170px;
     height: 10rem;
-    padding: 10px;
-    margin: 0.5rem;
+    background-color: white;
+    margin: 3rem;
     border-radius: 20px;
-    box-shadow: 0 0 15px #eee;
+    box-shadow: 0 0 10px #eee;
+    padding: 10px;
 }
 
 .a,
