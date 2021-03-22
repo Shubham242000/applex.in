@@ -26,7 +26,7 @@
 <body>
 
     <!-- HEADER  -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-1 ">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 pt-3">
 
         <a class="navbar-brand  logo d-flex align-items-center" href="#">
             <img src="./applex assets/applex logo.png" alt="" id="logo"> &nbsp;
@@ -73,11 +73,11 @@
 
 
     <!-- Tag -->
-    <div class="container-fluid">
-        <div class="row mb-5 mt-3">
-            <div class="col mb-5 tag">
-                <h1>
-                    Your ultimate destination for seamless development
+    <div class="container-fluid mt-4">
+        <div class="row mb-5 mt-4">
+            <div class="col mb-5 tag mt-4">
+                <h1 id="tagline">
+                    Thinking + Designing + Coding = An amazing app just for you.
                 </h1>
             </div>
         </div>
@@ -87,14 +87,14 @@
 
     <!-- About Us -->
 
-    <div class="container" data-aos="fade-up" data-aos-delay="400">
-        <div class="row my-5">
+    <div class="container  my-5" data-aos="fade-up" data-aos-delay="400">
+        <div class="row my-5 ">
             <div class="col-md-8" style="text-align">
-                <h2 style="color: darkgray;">About Us</h2>
-                <h1 class="my-5">
+                <!-- <h2 style="color: darkgray;">About Us</h2> -->
+                <h1 class="my-5 about">
                     We help brands and individuals solve their app related challenges with gratifying solutions
                 </h1>
-                <p class="my-3">
+                <p class="my-3 about">
                     We are a group of professionals who believe that in this growing scenario of digitization and
                     innovation, <span style="color: crimson; font-weight: bolder ; padding: 5px;">mobile based
                         applications</span> are the need of the day.
@@ -104,7 +104,7 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <img src="./applex assets/developers.png" alt="">
+                <img src="./applex assets/developers.png" id="rightimage" alt="">
             </div>
         </div>
     </div>
@@ -116,10 +116,10 @@
         <div class="row" style="text-align: center;">
             <div class="col my-5">
                 <h3 style="color: darkgray;">WHAT WE DO</h3>
-                <h1 class="my-5">
+                <h1 class="my-5 about">
                     Amazing features to convince you to use our products and services
                 </h1>
-                <p class="my-3">
+                <p class="my-3 about">
                     Mobile apps can help increase engagement and foster customer loyalty and brand recognition. If
                     you’re looking for a team to support your mobile application development project, applex.in can
                     help. We offer cutting-edge research, development, and mobile application design to match your
@@ -131,21 +131,33 @@
             </div>
         </div>
         <div class="row  my-2 mx-auto">
-            <div class="col-md-6 my-3 brick d-flex justify-content-center align-items-center flex-column">
-                <h5>Apps</h5>
-                <img src="./applex assets/redbg.png" alt="">
+            <div class="left col-md-6 my-3 brick d-flex justify-content-around align-items-center flex-column">
+                <img src="./applex assets/design.png" alt="">
+                <h3 class="my-2">Design</h3>
+                <p>
+                    Best in class UI/UX designs with regular updates to make your app stay updated with the latest design trends.
+                </p>
             </div>
-            <div class="col-md-6 my-3 brick d-flex justify-content-center align-items-center flex-column">
-                <h5>Development</h5>
-                <img src="./applex assets/code.png" alt="">
+            <div class="left col-md-6 my-3 brick d-flex justify-content-around align-items-center flex-column">
+                <img src="./applex assets/development.png" alt="">
+                <h3 class="my-2">Development</h3>
+                <p>
+                    Tailor-made apps underpinned by deep knowledge of material design and enterprise-grade mobile security can create a unified experience across varied screen sizes.
+                </p>
             </div>
-            <div class="col-md-6 my-3 brick d-flex justify-content-center align-items-center flex-column">
-                <h5>Design</h5>
-                <img src="./applex assets/designer.png" alt="">
+            <div class="right col-md-6 my-3 brick d-flex justify-content-around align-items-center flex-column">
+                <img src="./applex assets/debugging.png" alt="">
+                <h3 class="my-2">Debugging</h3>
+                <p>
+                    Extensive debugging and testing to ensure that the end user gets to experience a completely bug-free product.
+                </p>
             </div>
-            <div class="col-md-6 my-3 brick d-flex justify-content-center align-items-center flex-column">
-                <h5>Support and Help</h5>
+            <div class="right col-md-6 my-3 brick d-flex justify-content-around align-items-center flex-column">
                 <img src="./applex assets/help.png" alt="">
+                <h3 class="my-2">Help and Support</h3>
+                <p>
+                    Get 24×7 help and support regarding any app you want us to develop for you or your company.
+                </p>
             </div>
         </div>
     </div>
@@ -197,40 +209,42 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="box">
-            <div class="block first">
-                <img src="./applex assets/uem.png" alt="">
-            </div>
-            <div class="xyz">
-                <div class="block a">
-                    <img src="./applex assets/robot.png" alt="">
+    <div class="container-fluid  pb-4">
+        <div class="container-fluid pb-4">
+            <div class="box">
+                <div class="block first">
+                    <img src="./applex assets/uem.png" alt="">
                 </div>
-                <div class="block b">
-                    <img src="./applex assets/bulb.jpg" alt="">
+                <div class="xyz">
+                    <div class="block a">
+                        <img src="./applex assets/robot.png" alt="">
+                    </div>
+                    <div class="block b">
+                        <img src="./applex assets/bulb.jpg" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="innerdiv">
-                <div class="block c">
-                    <img src="./applex assets/campus24.png" alt="">
+                <div class="innerdiv">
+                    <div class="block c">
+                        <img src="./applex assets/campus24.png" alt="">
+                    </div>
+                    <div class="block d">
+                        <img src="./applex assets/a.png" alt="">
+                    </div>
+                    <div class="block e">
+                        <img src="./applex assets/innov.png" alt="">
+                    </div>
                 </div>
-                <div class="block d">
-                    <img src="./applex assets/a.png" alt="">
+                <div class="xyz">
+                    <div class="block f">
+                        <img src="./applex assets/wealthy.png" alt="">
+                    </div>
+                    <div class="block g">
+                        <h1>.</h1>
+                    </div>
                 </div>
-                <div class="block e">
-                    <img src="./applex assets/innov.png" alt="">
-                </div>
-            </div>
-            <div class="xyz">
-                <div class="block f">
-                    <img src="./applex assets/wealthy.png" alt="">
-                </div>
-                <div class="block g">
+                <div class="block second">
                     <h1>.</h1>
                 </div>
-            </div>
-            <div class="block second">
-                <h1>.</h1>
             </div>
         </div>
     </div>
@@ -249,46 +263,40 @@
     <section class="text-gray-600 body-font ">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 abc">
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 abc review">
                     <div class="h-full text-center">
                         <img alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                            src="./applex assets/blackback.jpg">
-                        <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                            taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote
-                            bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                            src="./applex assets/sagnik.jpg">
+                        <p class="leading-relaxed" style="font-style: italic;">"Campus24 thanks the highly motivated developers from your team for
+                            their professionalism and skills in terms of their quality and delivering well within the
+                            scheduled timeframes. Campus24 continues in taking their services as a satisfied customer.
+                            Wish your team all the best."</p>
                         <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
-                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
-
+                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Sagnik Majumder</h2>
+                        <p class="text-gray-500">Founder-Bytera Inc.</p>
                     </div>
                 </div>
-                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 abc">
+                <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 abc review">
                     <div class="h-full text-center">
                         <img alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                            src="./applex assets/redbg.jpg">
-                        <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki
-                            taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote
-                            bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                            src="./applex assets/sandeep.jpg">
+                        <p class="leading-relaxed" style="font-style: italic;">"Campus24 thanks the highly motivated developers from your team for their professionalism and skills in terms of their quality and delivering well within the scheduled timeframes. Campus24 continues in taking their services as a satisfied customer. Wish your team all the best."</p>
                         <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
-                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
-
+                        <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Sandeep Dwivedi</h2>
+                        <p class="text-gray-500">Innovation Officer, DST, Govt. Of U.P.</p>
                     </div>
                 </div>
-                <div class="lg:w-1/3 lg:mb-0 p-4 abc">
+                <div class="lg:w-1/3 lg:mb-0 p-4 abc review">
                     <div class="h-full text-center">
                         <img alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                            src="./applex assets/boat.jpg">
-                        <p class="leading-relaxed">Edison bulb retro cloud bread echo park,
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis labore sequi. Culpa
-                            ab magni quasi corrupti quae, quo voluptates sapiente ullam accusantium tempora explicabo
-                            earum eveniet repudiandae sit inventore! helvetica stumptown taiyaki taxidermy 90's cronut
-                            +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar
-                            cronut adaptogen squid fanny pack vaporware.</p>
+                            src="/applex assets/vk.jpg">
+                        <p class="leading-relaxed" style="font-style: italic;">"Great idea, willing to implement this in our college."</p>
                         <span class="inline-block h-1 w-10 rounded bg-red-500 mt-6 mb-4"></span>
                         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
-
+                        <p class="text-gray-500">Chiarman, IET Alwar</p>
                     </div>
                 </div>
             </div>
@@ -345,7 +353,9 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
@@ -354,51 +364,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
+    <script src="applexjs.js"></script>
 
-    <script>
-        ScrollReveal({ distance: '60px' });
-        window.sr = ScrollReveal();
-        sr.reveal('.container', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        sr.reveal('.row', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        // sr.reveal('.container-fluid', {
-        //     duration: 2000,
-        //     origin: 'top'
-        // });
-        sr.reveal('.col-md-4', {
-            duration: 1600,
-            origin: 'right'
-        });
-        sr.reveal('.col-md-6', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        sr.reveal('.col', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        sr.reveal('.col-md-8', {
-            duration: 1000,
-            origin: 'bottom'
-        });
-        sr.reveal('h2', {
-            duration: 1000,
-            origin: 'bottom'
-        });
-
-
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-
-
-    </script>
 
 
 </body>
