@@ -6,6 +6,9 @@ $(window).scroll(function() {
     }
 });
 
+ document.getElementsByClassName("logo")[0].addEventListener("click",function(){
+            location.assign("index.html");
+        });
 
 ScrollReveal({ distance: '60px' });
 window.sr = ScrollReveal();
