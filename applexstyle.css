@@ -7,18 +7,13 @@ body {
 #rightimage{
     width: 100%;
     object-fit: contain;
-    /* border: 2px solid darkblue; */
+    border: 2px solid darkblue;
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
   }
-
-    .block img{
-    width: 70%;
-    object-fit: contain;
-}
   
   /* Track */
   ::-webkit-scrollbar-track {
@@ -105,8 +100,12 @@ i{
 .brick:hover{
     box-shadow: 0 0 15px #eee;
 }
+
 .brick img{
     width: 20%;
+    height: 30%;
+    object-fit: contain;
+
 }
 .contact-bounce{
     position: fixed;
@@ -156,7 +155,10 @@ i{
     box-shadow: 0 0 10px #eee;
     padding: 10px;
 }
-
+.block img{
+    width: 70%;
+    object-fit: contain;
+}
 .a,
 .b,
 .f,
@@ -266,4 +268,4 @@ img{
 .abc:hover{
     box-shadow: 0 0 30px #eee;
     cursor: pointer;
-} 
+}
