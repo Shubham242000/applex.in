@@ -4,6 +4,12 @@ body {
     font-family: 'Oxygen';
 }
 
+#rightimage{
+    width: 100%;
+    object-fit: contain;
+    
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
@@ -97,6 +103,37 @@ i{
 .brick img{
     width: 20%;
 }
+.contact-bounce{
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    border-radius: 10px;
+    animation-name: move;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse;
+    display: flex;
+    flex-direction: column;  
+    z-index: 1000;
+}
+.contact-bounce img:hover{
+    cursor: pointer;
+    color: gray;
+}
+.contact-bounce i:hover{
+    cursor: pointer;
+}
+.contact-bounce i{
+    font-size: 50px;
+    color: green;
+}
+@keyframes move{
+    0%{}
+    100%{
+        transform: translateY(10px);
+    }
+}
+
 .contact{
     background-color: crimson;
     color: white;
