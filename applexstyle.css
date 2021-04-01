@@ -8,11 +8,10 @@ body {
     background-size: contain;
 }
 
-
 #rightimage{
     width: 100%;
     object-fit: contain;
-    
+    /* border: 2px solid darkblue; */
 }
 
 /* width */
@@ -158,11 +157,11 @@ i{
     margin: 3rem;
     border-radius: 20px;
     box-shadow: 0 0 10px #eee;
-    padding: 10px;
+    padding: 0 10px;
 }
 .block img{
-    width: 70%;
-    object-fit: contain;
+    width: 80%;
+    object-fit: cover;
 }
 .a,
 .b,
@@ -195,10 +194,19 @@ img{
     /* width: 30%; */
 }
 #footer{
-    background-color: rgb(197, 30, 63);
+    background-color:rgb(41, 41, 41);
     color: white;
     padding: 20px;
     text-align: center;
+}
+.footer i {
+    font-size: 25px;
+    margin: 5px;
+    color: black;
+}
+.footer i:hover{
+    color: crimson;
+    cursor: pointer;
 }
 .footer{
     background-color: #eee;
