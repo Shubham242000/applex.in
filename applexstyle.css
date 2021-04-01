@@ -2,7 +2,12 @@
 
 body {
     font-family: 'Oxygen';
+    background-image: url(./applex\ assets/line.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
 }
+
 
 #rightimage{
     width: 100%;
