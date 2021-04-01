@@ -149,7 +149,7 @@ i{
     padding: 8px 16px;
 }
 
-.block { 
+.block {
 
     width: 170px;
     height: 10rem;
@@ -158,10 +158,13 @@ i{
     border-radius: 20px;
     box-shadow: 0 0 10px #eee;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 .block img{
     width: 80%;
-    object-fit: cover;
+    height: 90%;
+    object-fit: contain;
+    box-sizing: border-box;
 }
 .a,
 .b,
