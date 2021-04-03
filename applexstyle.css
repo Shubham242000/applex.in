@@ -177,7 +177,7 @@ i{
 
 @media screen and (max-width: 450px) {
     .navbar-collapse ul li{
-        text-align: center;
+/*         text-align: center; */
     }
     .contact{
         margin: auto;
