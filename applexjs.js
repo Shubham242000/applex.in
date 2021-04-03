@@ -9,10 +9,12 @@ $(window).scroll(function() {
 
 document.getElementsByClassName("idea")[0].addEventListener("click",function(){
     document.querySelector('.bg-modal').style.display = 'flex';
+    document.querySelector('.navbar').style.display = 'none';
 });
 
 document.querySelector('.close').addEventListener("click",function (){
     document.querySelector('.bg-modal').style.display = 'none';
+    document.querySelector('.navbar').style.display = 'flex';
 });
 
  document.getElementsByClassName("logo")[0].addEventListener("click",function(){
@@ -69,4 +71,3 @@ sr.reveal('', {
 });
 
 
- 
