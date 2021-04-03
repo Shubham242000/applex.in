@@ -177,7 +177,7 @@ i{
 
 @media screen and (max-width: 450px) {
     .navbar-collapse ul li{
-/*         text-align: center; */
+        /* text-align: center;s */
     }
     .contact{
         margin: auto;
@@ -263,14 +263,16 @@ img{
     position: absolute;
     top: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     display: none;
 }
 .modal-content{
     width: 500px;
+    height: 600px;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 55px 20px;
     background-color: white;
     border-radius: 4px;
     text-align: center;
@@ -278,18 +280,30 @@ img{
 }
 .modal-content input,textarea{
     display: block;
-    width: 50%;
-    border: 1px solid black;
+    width: 80%;
+    border: 1px solid lightgray;
     margin: 10px auto;
+    border-radius: 2px;
+}
+.modal-content textarea{
+    min-height: 200px;
+    font-size: 20px;
 }
 @media screen and (max-width : 450px){
     .modal-content{
+        width: 300px;
+        height: 500px;
         margin: 0 20px;
+    }
+    .modal-content textarea{
+        min-height: 130px;
     }
     .modal-content input,textarea{
         width: 100%;
     }
 }
+
+
 .modal-content img{
     width: 70px;
     padding: 2px;
