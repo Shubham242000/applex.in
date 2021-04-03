@@ -6,6 +6,15 @@ $(window).scroll(function() {
     }
 });
 
+
+document.getElementsByClassName("idea")[0].addEventListener("click",function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener("click",function (){
+    document.querySelector('.bg-modal').style.display = 'none';
+});
+
  document.getElementsByClassName("logo")[0].addEventListener("click",function(){
             location.assign("index.html");
         });
