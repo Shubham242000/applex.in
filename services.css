@@ -97,12 +97,13 @@
             background-color: white;
         }
 
-        .contact {
-            background-color: crimson;
-            color: white;
-            border-radius: 15px;
-            padding: 8px 16px;
+         .contact{
+          background-color: crimson;
+          color: white;
+          border-radius: 5px;
+          padding: 5px 14px;
         }
+
         .logo i{
             font-size: 35px;
         }
