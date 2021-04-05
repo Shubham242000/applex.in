@@ -24,6 +24,7 @@
         body {
             font-family: 'Oxygen';
         }
+
         .box {
             /* bottom: 0;
             position: fixed; */
@@ -39,20 +40,24 @@
             background-color: #eee;
             color: black;
         }
-        a{
+
+        a {
             color: black;
         }
-        a:hover{
+
+        a:hover {
             color: brown;
             text-decoration: none;
         }
+
         #footer {
-            background-color:black;
-            color: white ;
+            background-color: black;
+            color: white;
             padding: 20px;
             text-align: center;
         }
-        .head{
+
+        .head {
             text-align: center;
             background-image: url(/applex\ assets/contact.jpg);
             background-repeat: no-repeat;
@@ -61,7 +66,8 @@
             color: white;
             position: relative;
         }
-        .head::before{
+
+        .head::before {
             position: absolute;
             content: "";
             top: 0;
@@ -72,18 +78,33 @@
             height: 100%;
             width: 100%;
         }
-        .form-left{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
+
+        .form-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
-        i{
-          font-size: 25px;
-          margin: 5px;
+
+        i {
+            font-size: 25px;
+            margin: 5px;
         }
-        i:hover{
-          cursor: pointer;
-          color: crimson;
+
+        i:hover {
+            cursor: pointer;
+            color: crimson;
+        }
+
+        .form {
+            background-image: url(./applex\ assets/footer-bg.png);
+            /* background-position: center; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* padding: 10px; */
+        }
+
+        .form-body {
+            background-color: rgba(245, 245, 255, 0.3);
         }
     </style>
 </head>
@@ -100,63 +121,70 @@
                     Seamless app development with applex.in
                 </h2>
                 <p class="py-2">
-                    Bring your mobile app ideas into life with us 
+                    Bring your mobile app ideas into life with us
                 </p>
             </div>
         </div>
     </div>
 
     <!-- Details -->
-        
+
 
 
 
     <!-- form -->
     <div class="container">
-      <div class="row py-5">
-        <div class="col-md-7 form-left my-3">
-          <h1 style="font-weight: bold;">Get in Touch </h1>
-          <h4>
-            Salt Lake, Sector-5,
-            Kolkata
-            West Bengal, India 
-          </h4>
-          <h4>
-            Email: contact@applex.in
-          </h4>
-          <h4>
-            Call Us Now: +91 6290438875
-          </h4>
+        <div class="row py-5 form">
+            <!-- <div class="col-md-7 form-left my-3">
+                <h1 style="font-weight: bold;">Get in Touch </h1>
+                <h4>
+                    Salt Lake, Sector-5,
+                    Kolkata
+                    West Bengal, India
+                </h4>
+                <h4>
+                    Email: contact@applex.in
+                </h4>
+                <h4>
+                    Call Us Now: +91 6290438875
+                </h4>
+            </div> -->
+            <div class="col-md-6 my-3 form-body">
+                <form  action="https://formspree.io/f/xqkgraqp" method="POST" enctype="multipart/form-data">
+                    <div class="form-group my-3 py-3">
+                        <h1>Why Waiting? <h1></h1>
+                            Mail us now and get your doubts cleared.
+                            We will revert back to you within 24 hours, guaranteed.</h1>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                        <div style="padding:15px 0px;">
+                            <label>Attatch a File</label> <br>
+                            <input type="file" name="upload">
+                          </div>
+                      
+                       
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Share your thoughts?</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
         </div>
-        <div class="col-md-5 my-3">
-          <form>
-            <div class="form-group my-3 py-3">
-              <h1>Why Waiting? <h1></h1>
-               Mail us now and get your doubts cleared.
-                We will revert back to you within 24 hours, guaranteed.</h1>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            
-            
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Share your thoughts?</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-      
-        </div>
-      </div>
     </div>
 
 
     <!-- map -->
 
-    <div class="box my-5">
+    <div class="box my-3">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.291546280538!2d88.42522822674746!3d22.576377126329376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b020703c0d%3A0xece6f8e0fc2e1613!2sSector%20V%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1616426138237!5m2!1sen!2sin"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -177,15 +205,19 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">About us</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="https://www.termsofservicegenerator.net/live.php?token=7FQJ7cN28AvU60MqZ0b2KUrxzGGqvsMl">Terms & Conditions</a></li>
-                    <li><a href="https://www.privacypolicygenerator.info/live.php?token=RAr46RbL1wa1tThNqRNcDlAXJO9Lo3fT">Privacy Policy</a></li>
+                    <li><a
+                            href="https://www.termsofservicegenerator.net/live.php?token=7FQJ7cN28AvU60MqZ0b2KUrxzGGqvsMl">Terms
+                            & Conditions</a></li>
+                    <li><a
+                            href="https://www.privacypolicygenerator.info/live.php?token=RAr46RbL1wa1tThNqRNcDlAXJO9Lo3fT">Privacy
+                            Policy</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
                 <h3 style="font-weight:bold">Contact Us</h3>
                 <p>Kolkata,West Bengal, India.</p>
                 <p> <span style="font-weight: bolder;">Phone:</span> +91 6290438875</p>
-                <p> <span style="font-weight: bolder;">Email:</span>  contact@applex.in</p>
+                <p> <span style="font-weight: bolder;">Email:</span> contact@applex.in</p>
             </div>
             <div class="col-md-3">
                 <h3 style="font-weight:bold" class="pb-3">Reach us on</h3>
