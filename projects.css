@@ -1,0 +1,56 @@
+.card{
+    border-radius: 20px;
+    box-shadow: 0 0 15px #eee;
+    padding: 40px;
+    margin: 20px 0;
+   
+}
+.navbar{
+    background-color: white;
+}
+    body {
+        font-family: 'Helvetica';
+        background-image: url(./applex\ assets/line.png);
+        background-repeat: no-repeat;
+        background-position:  top 0% right : 20%;
+        background-size: 80%;
+        
+    }
+@media screen and (max-width:450px){
+    .card{
+        margin: 10px 15px;
+    }
+}
+.card img{
+    width: 50%;
+    margin: 5px 0;
+}
+.contact{
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 14px;
+}
+.card a{
+    color: blue;
+}
+.card a:hover{
+    background: linear-gradient(rgb(255, 65, 65), rgb(34, 3, 34));
+    /* clip hackery */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card:hover{
+    box-shadow: 0 0 45px #eee;   
+    cursor: pointer;
+}
+.tag h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(rgb(255, 65, 65), rgb(34, 3, 34));
+    margin: 70px 0;
+    /* clip hackery */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
