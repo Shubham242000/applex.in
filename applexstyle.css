@@ -107,6 +107,11 @@ nav{
     
 }
 
+.dark-theme{
+    background-color: #1a1a2e;
+    color: white;
+}
+
 .city{
     /* background-image: url(./applex\ assets/city.png);
     background-repeat: no-repeat;
