@@ -49,8 +49,8 @@ sr.reveal('.about', {
     origin: 'bottom'
 });
 sr.reveal('#tagline', {
-    duration: 2000,
-    origin: 'bottom'
+    duration: 1500,
+    origin: 'left'
 });
 
 sr.reveal('.block', {
