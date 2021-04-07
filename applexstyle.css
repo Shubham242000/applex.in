@@ -325,12 +325,12 @@ lottie-player{
     display: block;
     width: 70%;
     border: 1px solid lightgray;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 2px;
 }
 .modal-content textarea{
     min-height: 60px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .bg-modal h5::after{
     content: "";
