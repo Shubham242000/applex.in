@@ -15,8 +15,8 @@ body {
     margin: 50px 0;
 }
 .count-box{
-    margin: 10px; 
-    box-shadow: 0 0 2px lightgrey;
+    margin: 10px;
+    box-shadow: 0 0 10px #eee;
     border-radius: 20px;
     text-align: center;
     padding: 20px 0;
@@ -25,7 +25,7 @@ body {
     flex-direction: column;
 }
 .count-box:hover{
-    box-shadow: 0 0 4px lightgrey
+    box-shadow: 0 0 20px #eee
     
 }
 .count-box span{
