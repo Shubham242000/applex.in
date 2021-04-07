@@ -7,9 +7,6 @@ $(window).scroll(function () {
 });
 
 
-
-
-
 document.getElementsByClassName("idea")[0].addEventListener("click", function () {
     document.querySelector('.bg-modal').style.display = 'flex';
     document.querySelector('.navbar').style.display = 'none';
@@ -26,11 +23,11 @@ document.getElementsByClassName("logo")[0].addEventListener("click", function ()
 
 ScrollReveal({ distance: '60px' });
 window.sr = ScrollReveal();
-sr.reveal('', {
+sr.reveal('.counter', {
     duration: 2000,
     origin: 'bottom'
 });
-sr.reveal('.counts', {
+sr.reveal('', {
     duration: 2000,
     origin: 'bottom'
 });
