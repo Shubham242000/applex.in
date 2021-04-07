@@ -11,8 +11,30 @@ body {
 #tagline{
     font-size: 62px;
 }
-
-
+.counts{
+    margin: 50px 0;
+}
+.count-box{
+    margin: 10px;
+    box-shadow: 0 0 2px lightgrey;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.count-box:hover{
+    box-shadow: 0 0 4px lightgrey
+    
+}
+.count-box span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.count-box i{
+    color: #aa0202f8;
+}
 
 @media screen and (max-width : 450px){
     #tagline{
