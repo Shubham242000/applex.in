@@ -44,6 +44,21 @@
     box-shadow: 0 0 45px #eee;   
     cursor: pointer;
 }
+.cover-photo{
+    background: url(./applex_assets/utsav.png);
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.profile{
+    height:120px;
+    width:120px;
+    
+    margin: 93px 0px 0px -175px;
+    border:1px solid #fefefefe;
+    padding: 7px;
+    background: #f0f0f0f0;
+}
 .tag{
     margin: 100px 0;
 }
