@@ -67,6 +67,15 @@
         .footer h3 {
             display: inline-block;
         }
+
+/*         .footer h3::after {
+            content: "";
+            display: block;
+            border: 1px solid crimson;
+            width: 40%;
+            margin: 2px auto;
+
+        } */
     </style>
     <link rel="stylesheet" href="projects.css">
 </head>
@@ -90,13 +99,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="projects.html">Projects</a>
                 </li>
                 <!-- <li class="nav-item">
@@ -119,26 +128,17 @@
         </div>
     </nav>
 
-
-    <div class="container-fluid py-5 my-md-5">
-        <div class="row my-md-5">
-            <div class="col-md-6 tag ">
-                <h1 style="text-align: center;">OUR PROJECTS</h1>
-                <p style="color: #8b8e92; text-align: center;">Some of our previous work</p>
-            </div>
-            <div class="col-md-6 project-image">
-                <img src="./applex assets/projects.jpeg" alt="">
-            </div>
-        </div>
-
+    <div class="tag">
+        <h1> OUR PROJECTS </h1>
     </div>
 
-   
 
     <div class="container">
-        <div class="row d-flex justify-content-around  my-md-5">
+        <div class="row d-flex justify-content-around my-5" >
             <div class="col-md-5 card my-5">
-                <img src="./applex assets/snaplingo.png" alt="">
+              <div class="cover-photo">
+                <img src="./applex assets/snaplingo.png" class="profile">
+              </div>  
                 <h2 class="py-4">
                     SnapLingo
                 </h2>
@@ -149,9 +149,9 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('https://play.google.com/store/apps/details?id=com.applex.snaplingo')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
                 <img src="./applex assets/utsav.png" alt="">
@@ -165,16 +165,16 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('https://play.google.com/store/apps/details?id=com.applex.utsav')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
                 <br>
-                <img src="./applex assets/a.png" alt="">
-                <br>
-                <br>
-
+                 <img src="./applex assets/a.png" alt="">
+                 <br>
+                 <br>
+            
                 <h2 class="py-4">
                     Atheta
                 </h2>
@@ -185,12 +185,12 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('https://play.google.com/store/apps/details?id=com.atheta.atheta')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
-                <img src="./applex assets/camp.jpg" alt="">
+                 <img src="./applex assets/camp.jpg" alt="">
                 <h2 class="py-4">
                     Campus24
                 </h2>
@@ -201,15 +201,15 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('https://play.google.com/store/apps/details?id=com.bytera.campus24')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
                 <br>
-                <img src="./applex assets/spectrum.jpg" alt="">
-                <br>
-                <br>
+                 <img src="./applex assets/spectrum.jpg" alt="">
+                 <br>
+                 <br>
 
                 <h2 class="py-4">
                     Spectrum
@@ -221,15 +221,15 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('https://spectrumbiocides.com/contact/')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
-                <img src="./applex assets/vsel.jpeg" alt="">
-                <br>
+                 <img src="./applex assets/vsel.jpeg" alt="">
+                 <br>
                 <h2 class="py-4">
-                    VSEL Enterprises Ltd.
+                    VSEL Enterprises Ltd. 
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
@@ -238,66 +238,66 @@
                     perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
                     deleniti aspernatur eligendi?
                 </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
+                <div class = "containerbtn">
+                    <button class="btn btn1" onclick="window.open('#')">Read More</button>
+                    </div>
             </div>
             <div class="col-md-5 card my-5">
                 <img src="./applex assets/triangle.png" alt="">
-                <h2 class="py-4">
-                    Mallabhum Prayas
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
-                    assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
-                    facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
-                    perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
-                    deleniti aspernatur eligendi?
-                </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
+               <h2 class="py-4">
+                   Mallabhum Prayas
+               </h2>
+               <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
+                   assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
+                   facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
+                   perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
+                   deleniti aspernatur eligendi?
+               </p>
+               <div class = "containerbtn">
+                <button class="btn btn1" onclick="window.open('https://mallabhumprayas.org')">Read More</button>
                 </div>
+           </div>
+           <div class="col-md-5 card my-5">
+               <br>
+            <img src="./applex assets/innov.png" alt="">
+            <br>
+            <br>
+           <h2 class="py-4">
+               Innovacion
+           </h2>
+           <br>
+           <p>
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
+               assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
+               facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
+               perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
+               deleniti aspernatur eligendi?
+           </p>
+           <div class = "containerbtn">
+            <button class="btn btn1" onclick="window.open('https://play.google.com/store/apps/details?id=com.applex.innovacion')">Read More</button>
             </div>
-            <div class="col-md-5 card my-5">
-                <br>
-                <img src="./applex assets/innov.png" alt="">
-                <br>
-                <br>
-                <h2 class="py-4">
-                    Innovacion
-                </h2>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
-                    assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
-                    facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
-                    perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
-                    deleniti aspernatur eligendi?
-                </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
-            </div>
-            <div class="col-md-5 card my-5">
-                <img src="./applex assets/applex logo.png" alt="">
-                <br>
-                <h2 class="py-4">
-                    Soccer Skills
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
-                    assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
-                    facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
-                    perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
-                    deleniti aspernatur eligendi?
-                </p>
-                <div class="containerbtn">
-                    <button class="btn btn1">Read More</button>
-                </div>
-            </div>
-
-
-
+       </div>
+       <div class="col-md-5 card my-5">
+        <img src="./applex assets/applex logo.png" alt="">
+        <br>
+       <h2 class="py-4">
+           Soccer Skills
+       </h2>
+       <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam similique vel, iusto, quibusdam
+           assumenda, ad sapiente atque corporis perferendis natus veniam commodi cumque mollitia adipisci
+           facere harum impedit necessitatibus aliquid! Ut voluptates veritatis delectus dolorum incidunt
+           perspiciatis recusandae voluptatibus eum quam nihil voluptatum, libero molestiae laboriosam veniam
+           deleniti aspernatur eligendi?
+       </p>
+       <div class = "containerbtn">
+       <button class="btn btn1" onclick="window.open('#')">Read More</button>
+       </div>
+   </div>
+          
+    
+    
         </div>
     </div>
 
@@ -382,25 +382,9 @@
             duration: 2000,
             origin: 'bottom'
         });
-        sr.reveal('.tag h1', {
-            duration: 1200,
-            origin: 'left'
-        });
-        sr.reveal('.tag p', {
-            duration: 1600,
-            origin: 'left'
-        });
-        sr.reveal('.project-image', {
-            duration: 1500,
-            origin: 'top'
-        });
         document.getElementsByClassName("logo")[0].addEventListener("click", function () {
             location.assign("index.html");
         });
-
-
-
-
     </script>
 
 
