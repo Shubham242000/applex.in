@@ -3,7 +3,7 @@
     box-shadow: 0 0 15px #eee;
     padding: 40px;
     margin: 20px 0;
-   
+    
 }
 .navbar{
     background-color: white;
@@ -12,8 +12,8 @@
         font-family: 'Helvetica';
         background-image: url(./applex\ assets/line.png);
         background-repeat: no-repeat;
-        /* background-position:  top 0% right 50%; */
-        background-size: 70%;
+       
+         background-size: 70%;  
         
     }
 @media screen and (max-width:450px){
@@ -44,20 +44,38 @@
     box-shadow: 0 0 45px #eee;   
     cursor: pointer;
 }
+.tag{
+    margin: 100px 0;
+}
+.tag p{
+    font-size: 20px;
+}
 .tag h1{
     font-size: 50px;
-    text-align: center;
+   
     font-weight: bold;
-    background: linear-gradient(rgb(255, 65, 65), rgb(34, 3, 34));
-    margin: 70px 0;
+    
     /* clip hackery */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #323850;
 }
 .containerbtn{
     text-align: center;
     margin-top: 30px;
 }
+
+.project-image{
+    
+   
+}
+.project-image img{
+    width: 70%;
+    margin: auto;
+}
+@media screen and (max-width : 450px){
+   
+    
+}
+
 .card .btn{
     border:1px solid #000;
     background: none;
