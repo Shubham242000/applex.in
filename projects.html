@@ -376,7 +376,7 @@
 
 
     <script>
-        function Open() {
+         function Open() {
             location.assign("/contactapplex.html");
         }
         ScrollReveal({ distance: '60px' });
@@ -391,9 +391,22 @@
             duration: 2000,
             origin: 'bottom'
         });
+        sr.reveal('.tag h1', {
+            duration: 1200,
+            origin: 'left'
+        });
+        sr.reveal('.tag p', {
+            duration: 1600,
+            origin: 'left'
+        });
+        sr.reveal('.project-image', {
+            duration: 1500,
+            origin: 'top'
+        });
         document.getElementsByClassName("logo")[0].addEventListener("click", function () {
             location.assign("index.html");
         });
+
     </script>
 
 
