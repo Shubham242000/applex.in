@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>Blogs</title>
+    <link href="blogs.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 pt-3 header">
+
+        <a class="navbar-brand  logo d-flex align-items-center" href="#">
+            <img src="./applex assets/applex logo.png" alt="" id="logo"> &nbsp;
+            <div style="display: flex; flex-direction: column;">
+                <h3 style="margin: 0; font-weight: lighter;">applex.in</h3>
+                <!-- <p style="margin: 0; font-size: 12px;" id="tag">Your Ultimate Destination for Seamless Development</p> -->
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blogs.html">Blog</a>
+                </li> 
+                <li class="nav-item dropdown">
+                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a> -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <button type="button" class="btn contact" onclick="window.open('contactapplex.html')">Contact</button>
+        </div>
+    </nav>
+
+    <!-- <h1 class="py-5 my-5">BLOGS</h1> -->
+
+    <!-- Content -->
+    <!-- <div class="blog-section container">
+        <div class="row left-section">
+            <div class="col-md-8">
+                <div class="row article">
+                    <div class="col-md-2">
+                        Image
+                    </div>
+                    <div class="col-md-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis eum debitis
+                        exercitationem eligendi quasi molestiae deleniti consequuntur, quam quae repellendus numquam,
+                        hic earum voluptatibus vel enim cumque reprehenderit pariatur itaque consectetur quisquam magnam
+                        blanditiis. Voluptate tempore aspernatur labore repellendus? Voluptas quas eos veniam error
+                        veritatis dignissimos saepe commodi autem.
+                    </div>
+                </div>
+                <div class="row article">
+                    <div class="col-md-2">
+                        Image
+                    </div>
+                    <div class="col-md-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis eum debitis
+                        exercitationem eligendi quasi molestiae deleniti consequuntur, quam quae repellendus numquam,
+                        hic earum voluptatibus vel enim cumque reprehenderit pariatur itaque consectetur quisquam magnam
+                        blanditiis. Voluptate tempore aspernatur labore repellendus? Voluptas quas eos veniam error
+                        veritatis dignissimos saepe commodi autem.
+                    </div>
+                </div>
+                <div class="row article">
+                    <div class="col-md-2">
+                        Image
+                    </div>
+                    <div class="col-md-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis eum debitis
+                        exercitationem eligendi quasi molestiae deleniti consequuntur, quam quae repellendus numquam,
+                        hic earum voluptatibus vel enim cumque reprehenderit pariatur itaque consectetur quisquam magnam
+                        blanditiis. Voluptate tempore aspernatur labore repellendus? Voluptas quas eos veniam error
+                        veritatis dignissimos saepe commodi autem.
+                    </div>
+                </div>
+                <div class="row article">
+                    <div class="col-md-2">
+                        Image
+                    </div>
+                    <div class="col-md-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis eum debitis
+                        exercitationem eligendi quasi molestiae deleniti consequuntur, quam quae repellendus numquam,
+                        hic earum voluptatibus vel enim cumque reprehenderit pariatur itaque consectetur quisquam magnam
+                        blanditiis. Voluptate tempore aspernatur labore repellendus? Voluptas quas eos veniam error
+                        veritatis dignissimos saepe commodi autem.
+                    </div>
+                </div>
+                <div class="row article">
+                    <div class="col-md-2">
+                        Image
+                    </div>
+                    <div class="col-md-8">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perferendis eum debitis
+                        exercitationem eligendi quasi molestiae deleniti consequuntur, quam quae repellendus numquam,
+                        hic earum voluptatibus vel enim cumque reprehenderit pariatur itaque consectetur quisquam magnam
+                        blanditiis. Voluptate tempore aspernatur labore repellendus? Voluptas quas eos veniam error
+                        veritatis dignissimos saepe commodi autem.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row right-section">
+            <div class="col">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="col">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                    <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                    <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                    <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Archives</h3>
+                <ul>
+                    <li><a href="">March 21</a></li>
+                    <li><a href="">Feb 21</a></li>
+                    <li><a href="">Jan 21</a></li>
+                    <li><a href="">Dec 20</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Catogeries</h3>
+                <ul>
+                    <li><a href="">AI</a></li>
+                    <li><a href="">ML</a></li>
+                    <li><a href="">Android</a></li>
+                    <li><a href="">Cloud</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="tag">
+        <div class="row py-5">
+            <div class="col-md-12 py-5">
+                <h1>BLOGS</h1>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container blog">
+
+        <div class="row mx-auto">
+            <!-- left -->
+            <div class="col-md-9">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="row article">
+                            <div class="col-md-4 image-article">
+                                <img src="./applex assets/projects.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row block-article">
+                                    <div class="col">
+                                        <p
+                                            style="color: gray; font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            March 23, 2021</p>
+                                        <h2 class="py-4">Sudden asdasdas</h2>
+                                        <a href="">Team Applex</a>
+
+                                        <p class="py-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate?
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate
+                                        </p>
+                                        <a href="">asda</a>,
+                                        <a href="">asdad</a>
+                                        <div class="row d-flex justify-content-between read-more py-3">
+                                            <div class="col-md-7 social">
+                                                <div class="circle">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-pinterest-p"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 py-3">
+                                                <button type="button" class="btn btn-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row article">
+                            <div class="col-md-4 image-article">
+                                <img src="./applex assets/projects.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row block-article">
+                                    <div class="col">
+                                        <p
+                                            style="color: gray; font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            March 23, 2021</p>
+                                        <h2 class="py-4">Sudden asdasdas</h2>
+                                        <a href="">Team Applex</a>
+
+                                        <p class="py-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate?
+                                        </p>
+                                        <a href="">asda</a>,
+                                        <a href="">asdad</a>
+                                        <div class="row d-flex justify-content-between read-more py-3">
+                                            <div class="col-md-7 social">
+                                                <div class="circle">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-pinterest-p"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 py-3">
+                                                <button type="button" class="btn btn-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row article">
+                            <div class="col-md-4 image-article">
+                                <img src="./applex assets/projects.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row block-article">
+                                    <div class="col">
+                                        <p
+                                            style="color: gray; font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            March 23, 2021</p>
+                                        <h2 class="py-4">Sudden asdasdas</h2>
+                                        <a href="">Team Applex</a>
+
+                                        <p class="py-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate?
+                                        </p>
+                                        <a href="">asda</a>,
+                                        <a href="">asdad</a>
+                                        <div class="row d-flex justify-content-between read-more py-3">
+                                            <div class="col-md-7 social">
+                                                <div class="circle">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-pinterest-p"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 py-3">
+                                                <button type="button" class="btn btn-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row article">
+                            <div class="col-md-4 image-article">
+                                <img src="./applex assets/projects.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row block-article">
+                                    <div class="col">
+                                        <p
+                                            style="color: gray; font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            March 23, 2021</p>
+                                        <h2 class="py-4">Sudden asdasdas</h2>
+                                        <a href="">Team Applex</a>
+
+                                        <p class="py-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate?
+                                        </p>
+                                        <a href="">asda</a>,
+                                        <a href="">asdad</a>
+                                        <div class="row d-flex justify-content-between read-more py-3">
+                                            <div class="col-md-7 social">
+                                                <div class="circle">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-pinterest-p"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 py-3">
+                                                <button type="button" class="btn btn-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row article">
+                            <div class="col-md-4 image-article">
+                                <img src="./applex assets/projects.jpeg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row block-article">
+                                    <div class="col">
+                                        <p
+                                            style="color: gray; font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                                            March 23, 2021</p>
+                                        <h2 class="py-4">Sudden asdasdas</h2>
+                                        <a href="">Team Applex</a>
+
+                                        <p class="py-4">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis
+                                            possimus exercitationem sunt vero minus similique vitae aliquam, fugit cum
+                                            sequi laborum corporis ea quisquam natus enim voluptatibus omnis consequatur
+                                            reiciendis impedit facere ipsam labore. Asperiores aperiam provident aliquam
+                                            cupiditate?
+                                        </p>
+                                        <a href="">asda</a>,
+                                        <a href="">asdad</a>
+                                        <div class="row d-flex justify-content-between read-more py-3">
+                                            <div class="col-md-7 social">
+                                                <div class="circle">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </div>
+                                                <div class="circle">
+                                                    <i class="fab fa-pinterest-p"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 py-3">
+                                                <button type="button" class="btn btn-primary">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row comment">
+                            <div class="col-md-12">
+                                <h4 style="font-weight: bold;">Leave Comment</h4>
+                                <p>Your email address will not be published. Required fields are marked *</p>
+                                <span style="font-weight: lighter; font-size: small;">Your email address will not be published. Required fields are marked *</span>
+                                <br>
+                                <textarea style="border: 1px solid lightgray;"  placeholder="Type Here"></textarea>
+                                <br>
+                                <div class="info">
+                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Website"> 
+                                </div>
+                                <br>
+                                <input type="checkbox" class="my-2"> <span style="font-weight: lighter; font-size: small;">Save my name, email, and website in this browser for the next time I comment.</span>
+                                 <br>
+                                <button class="btn btn-primary">Post Comment >></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div class="col-md-3 d-flex flex-column">
+                <div class="row right-section">
+                    <div class="col-md-12 search search-article">
+                        <input type="text" placeholder="Search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="col-md-12 search">
+                        <h3>Recent Posts</h3>
+                        <ul>
+                            <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                            <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                            <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                            <li><a href="">Sudden Crash of Andriod Apps</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 search">
+                        <h3>Archives</h3>
+                        <ul>
+                            <li><a href="">March 21</a></li>
+                            <li><a href="">Feb 21</a></li>
+                            <li><a href="">Jan 21</a></li>
+                            <li><a href="">Dec 20</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 search">
+                        <h3>Catogeries</h3>
+                        <ul>
+                            <li><a href="">AI</a></li>
+                            <li><a href="">ML</a></li>
+                            <li><a href="">Android</a></li>
+                            <li><a href="">Cloud</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid d-flex justify-content-center py-5 footer">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./applex assets/applex logo.png" alt="" id="logo">
+                <h2 style="font-weight:bold">applex.in</h2>
+                <p>Seamless development with applex.in</p>
+            </div>
+            <div class="col-md-3">
+                <h3 style="font-weight:bold">Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a
+                            href="https://www.termsofservicegenerator.net/live.php?token=7FQJ7cN28AvU60MqZ0b2KUrxzGGqvsMl">Terms
+                            & Conditions</a></li>
+                    <li><a
+                            href="https://www.privacypolicygenerator.info/live.php?token=RAr46RbL1wa1tThNqRNcDlAXJO9Lo3fT">Privacy
+                            Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 style="font-weight:bold">Contact Us</h3>
+                <p>Kolkata,West Bengal, India.</p>
+                <p> <span style="font-weight: bolder;">Phone:</span> +91 6290438875</p>
+                <p> <span style="font-weight: bolder;">Email:</span> contact@applex.in</p>
+            </div>
+            <div class="col-md-3">
+                <h3 style="font-weight:bold" class="pb-3">Reach us on</h3>
+                <i class="fab fa-facebook-f" onclick="window.open('https://www.facebook.com/applexTeam/')"></i>
+                <i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/applex.in/')"></i>
+                <i class="fab fa-linkedin-in" onclick="window.open('https://www.linkedin.com/company/applex-in/')"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="footer">
+            <div class="col">
+                <p class="py-3">
+                    Copyright © applex.in | Powered by applex.in | All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Clouds -->
+
+
+    <script src="blogs.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
