@@ -22,8 +22,10 @@
     }
 }
 .card img{
-    width: 50%;
-    margin: 5px 0;
+    width: 40%;
+    height: 60%;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 .contact{
     background-color: crimson;
@@ -45,18 +47,34 @@
     cursor: pointer;
 }
 .cover-photo{
-    background: url(./applex\ assets/demo.jpeg);
     height: 200px;
     width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+    background-size: contain;
     border-radius: 5px 5px 0px 0px;
 }
-
+.cp1
+{
+    background-image: url(./applex\ assets/snapcover.jpeg);
+}
+.cp2
+{
+    background-image: url(./applex\ assets/utsavcover.jpeg);
+}
+.cp3,.cp4,.cp5,.cp6,.cp7,.cp7.cp9
+{
+    background-image: url(./applex\ assets/demo.jpeg);
+}
 
 .profile{
     height:100px;
     width:80px;
     
-    margin: 93px 50px 0px -100px;
+    margin: 80px 0px 0px -100px;
     border:1px solid #fefefefe;
     padding: 5px;
     background: #f0f0f0f0;
