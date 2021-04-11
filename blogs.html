@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                 </li>
 
             </ul>
-            <button type="button" class="btn contact" onclick="window.open('contactapplex.html')">Contact</button>
+            <button type="button" class="btn contact" onclick="location.assign('contactapplex.html')">Contact</button>
         </div>
     </nav>
 
@@ -491,6 +491,7 @@
 
 
     <!-- Footer -->
+   
     <div class="container-fluid d-flex justify-content-center py-5 footer">
         <div class="row">
             <div class="col-md-3">
@@ -503,7 +504,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">About us</a></li>
-                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contactapplex.html">Careers</a></li>
                     <li><a
                             href="https://www.termsofservicegenerator.net/live.php?token=7FQJ7cN28AvU60MqZ0b2KUrxzGGqvsMl">Terms
                             & Conditions</a></li>
@@ -559,6 +560,20 @@
 
 
     <script>
+         ScrollReveal({ distance: '60px' });
+        window.sr = ScrollReveal();
+
+        sr.reveal('.block-article', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        
+
+        sr.reveal('.search', {
+            duration: 1500,
+            origin: 'right'
+        });
+        
 
     </script>
 
