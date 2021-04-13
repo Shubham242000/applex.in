@@ -45,16 +45,29 @@ body {
     }
 
 }
+.footer .col-md-3{
+    padding: 50px;
+}
+@media screen and (max-width:450px){
+    .footer .col-md-3{
+        padding: 30px 10px;
+    }   
+}
 .idea{
-    background: linear-gradient(rgb(255, 65, 65), rgb(63, 5, 63));
+    /* background: linear-gradient(rgb(241, 97, 97), rgb(63, 5, 63)); */
+    background-color: #b7194d;
     display: inline-block;
+    box-shadow: 0 0 15px crimson;
     color: white;
     padding:  10px ;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .idea:hover{
-    background: linear-gradient(rgb(255, 65, 65), rgb(31, 3, 31));
+    /* background: linear-gradient(rgb(255, 65, 65), rgb(31, 3, 31)); */
+    background-color: #260249;
+    box-shadow: 0 0 15px #260249;
 }
 .idea i{
     color: white;
