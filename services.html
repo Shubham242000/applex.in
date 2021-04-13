@@ -21,7 +21,7 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 pt-3 header">
+    <nav class="navbar navbar-expand-lg navbar-light  py-2 pt-3 header sticky-top">
 
         <a class="navbar-brand  logo d-flex align-items-center" href="#">
             <img src="./applex assets/applex logo.png" alt="" id="logo"> &nbsp;
@@ -40,15 +40,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="services.html">Services</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item  ">
                     <a class="nav-link" href="projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blogs.html">Blog</a>
-                </li> 
+                </li>
                 <li class="nav-item dropdown">
                     <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
@@ -278,6 +278,13 @@
         });
         document.getElementsByClassName("logo")[0].addEventListener("click", function () {
             location.assign("index.html");
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 10) {
+                $('.navbar').addClass('shadow-nav');
+            } else {
+                $('.navbar').removeClass('shadow-nav');
+            }
         });
     </script>
 
