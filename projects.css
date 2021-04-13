@@ -245,9 +245,9 @@
     width: 80px;
     height: 80px;
 }
-    html{
-        font-size: 80%;
-    }    
+  .card{
+        font-size: 90%;
+    }     
 }
 .footer .col-md-3{
     padding: 50px;
