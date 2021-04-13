@@ -1,10 +1,14 @@
 .card{
     border-radius: 20px;
     box-shadow: 0 0 15px #eee;
-    padding: 40px;
+    padding: 40px 20px;
     margin: 20px 0;
     
 }
+.shadow-nav{
+    box-shadow: 0 0 15px rgba(194, 188, 188);
+}
+
 .navbar{
     background-color: white;
 }
@@ -47,38 +51,214 @@
     cursor: pointer;
 }
 .cover-photo{
-    height: 200px;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
-    padding:0;
-    background-size: contain;
-    border-radius: 5px 5px 0px 0px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  /* border: 1px solid red; */
+  height: 200px;
 }
 .cp1
 {
+    position: relative;
     background-image: url(./applex\ assets/snapcover.jpeg);
 }
 .cp2
 {
+    position: relative;
     background-image: url(./applex\ assets/utsavcover.jpeg);
 }
-.cp3,.cp4,.cp5,.cp6,.cp7,.cp7.cp9
+.cp3,.cp4,.cp5,.cp6,.cp7,.cp8,.cp9
 {
+    position: relative;
     background-image: url(./applex\ assets/demo.jpeg);
 }
-
-.profile{
-    height:100px;
-    width:80px;
-    
-    margin: 80px 0px 0px -100px;
-    border:1px solid #fefefefe;
-    padding: 5px;
-    background: #f0f0f0f0;
+.cp1::after,.cp2::after,.cp3::after,.cp4::after,.cp5::after,.cp6::after,.cp7::after,.cp8::after,.cp9::after{
+    content:"";
+    position: absolute;
+    /* z-index: -100; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
+.cp1 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+   z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(5, 98, 229);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./applex\ assets/snaplingo.png);
+    border-radius: 100%;
+   
+}
+
+.cp2 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(147, 4, 123);
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./applex\ assets/utsav.png);
+    border-radius: 100%;
+}
+.cp3 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(147, 4, 123);
+    background-size:    contain;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/a.png);
+    border-radius: 100%;
+}
+.cp4 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(25, 254, 0);
+    background-size:    contain;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/camp.jpg);
+    border-radius: 100%;
+}
+.cp5 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(229, 12, 1);
+    background-size:    contain;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/spectrum.jpg);
+    border-radius: 100%;
+}
+.cp6 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(1, 81, 229);
+    background-size:    contain;
+    background-color: white;
+    /* padding: 20px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/vsel.jpeg);
+    border-radius: 100%;
+}
+/* <img src="./applex assets/triangle.png" class="profile"> */
+.cp7 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(229, 1, 1);
+    background-size:    contain;
+    background-color: white;
+    /* padding: 20px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/triangle.png);
+    border-radius: 100%;
+}
+.cp8 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(229, 1, 1);
+    background-size:    contain;
+    background-color: white;
+    /* padding: 20px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/innov.png);
+    border-radius: 100%;
+}
+.cp9 .profile{
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    z-index: 100;
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 0 55px rgb(229, 1, 1);
+    background-size:    contain;
+    background-color: white;
+    /* padding: 20px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-image: url(./applex\ assets/applex\logo.png);
+    border-radius: 100%;
+}
+@media screen and (max-width : 450px){
+.cp1 .profile,.cp2 .profile,.cp3 .profile,.cp4 .profile,.cp5 .profile,.cp6 .profile,.cp7 .profile, .cp8 .profile , .cp9 .profile{
+    width: 80px;
+    height: 80px;
+}
+    html{
+        font-size: 80%;
+    }    
+}
+.footer .col-md-3{
+    padding: 50px;
+}
+@media screen and (max-width:450px){
+    .footer .col-md-3{
+        padding: 30px 10px;
+    }   
+}
+
+/* <img src="./applex assets/utsav.png" class="profile"> */
 .tag{
     margin: 100px 0;
 }
@@ -86,7 +266,7 @@
     font-size: 20px;
 }
 .tag h1{
-    font-size: 50px;
+    font-size: 60px;
    
     font-weight: bold;
     
@@ -127,7 +307,7 @@
 .card .btn1:hover{
     color: #fff;
 }
-.card .btn::before{
+.card .btn::after{
     content:" ";
     position:absolute;
     left:0;
@@ -137,10 +317,10 @@
     z-index: -1;
     transition: 0.8s;
 }
-.card .btn1::before{
+.card .btn1::after{
     top: 0;
     border-radius: 0 0 50% 50%;
 }
-.card .btn1:hover::before{
+.card .btn1:hover::after{
     height: 180%;
 }
