@@ -1,6 +1,9 @@
   /* body{
             color: #6f6f70;
         } */
+        .shadow-nav{
+            box-shadow: 0 0 15px rgba(194, 188, 188);
+        }
        .clouds{
             position: absolute;
             top: 0;
@@ -9,6 +12,14 @@
             background-size: contain;
             background-repeat: repeat-y;
        }
+       .footer .col-md-3{
+        padding: 50px;
+    }
+    @media screen and (max-width:450px){
+        .footer .col-md-3{
+            padding: 30px 10px;
+        }   
+    }
         .image-top {
             width: 800px;
         }
@@ -101,7 +112,7 @@
             margin: 20px 0;
         }
         .header {
-            position: relative;
+             
             background-color: white;
         }
 
