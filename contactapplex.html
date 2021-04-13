@@ -1,355 +1,465 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Oxygen:wght@300;400;700&family=Roboto&family=Ubuntu&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+body {
+    font-family: 'Helvetica';
+    background-image: url(./applex\ assets/line.png);
+    background-repeat: no-repeat;
+    background-position:  top 0% right : 20%;
+    background-size: 80%;
+    
+}
+#tagline{
+    font-size: 62px;
+}
+.counts{
+    margin: 50px 0;
+}
+.count-box{
+    margin: 10px;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.count-box:hover{
+    box-shadow: 0 0 20px #eee
+    
+}
+.count-box span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.count-box i{
+    color: #aa0202f8;
+}
 
+@media screen and (max-width : 450px){
+    #tagline{
+        font-size: 40px;
+    }
+    #dark-shade{
+        background-color: #FF050E25;
+    }
 
+}
+.footer .col-md-3{
+    padding: 50px;
+}
+@media screen and (max-width:450px){
+    .footer .col-md-3{
+        padding: 30px 10px;
+    }   
+}
+.idea{
+    /* background: linear-gradient(rgb(241, 97, 97), rgb(63, 5, 63)); */
+    background-color: #b7194d;
+    display: inline-block;
+    box-shadow: 0 0 15px crimson;
+    color: white;
+    padding:  10px ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.idea:hover{
+    /* background: linear-gradient(rgb(255, 65, 65), rgb(31, 3, 31)); */
+    background-color: #260249;
+    box-shadow: 0 0 15px #260249;
+}
+.idea i{
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+}
+#rightimage{
+    width: 100%;
+    object-fit: contain;
+    /* border: 2px solid darkblue; */
+}
 
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+/* width
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey; 
+    border-radius: 20px; */
+  /* } */
+   
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: crimson; 
+    border-radius: 5px;
+  }
+   */
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  } */ 
+#tag{
+    display: inline-block;
+    box-sizing: border-box;
+}
+#logo{
+    width: 35px;
+}
+nav{
+    background-color: rgba(255, 255, 255, 1);
+}
+.shadow-nav{
+    box-shadow: 0 0 15px rgba(194, 188, 188);
+}
 
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Fira+Sans&family=Oxygen:wght@300;400;700&family=Roboto&family=Ubuntu&display=swap');
+.counter .col-md-2:hover{
+    box-shadow: 0 0 15px #eee;
+    
+}
 
-        body {
-            font-family: 'Oxygen';
-        }
+.dark-theme{
+    background-color: #1a1a2e;
+    color: white;
+}
 
-        .box {
-            /* bottom: 0;
-            position: fixed; */
-            height: 300px;
-            width: 100%;
-        }
-
-        #logo {
-            width: 35px;
-        }
-
-        .footer {
-            background-color: #eee;
-            color: black;
-        }
-
-        a {
-            color: black;
-        }
-
-        a:hover {
-            color: brown;
-            text-decoration: none;
-        }
-
-        #footer {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .head {
-            text-align: center;
-            background-image: url(/applex\ assets/contact.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: white;
-            position: relative;
-        }
-
-        .head::before {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            height: 100%;
-            width: 100%;
-        }
-
-        .form-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-
-        i {
-            font-size: 25px;
-            margin: 5px;
-        }
-
-        i:hover {
-            cursor: pointer;
-            color: crimson;
-        }
-
-        .form {
-            background-image: url(./applex\ assets/footer-bg.png);
-            /* background-position: center; */
-            background-size: contain;
-            background-repeat: no-repeat;
-            /* padding: 10px; */
-        }
-
-        .form-body {
-            background-color: rgba(245, 245, 255, 0.3);
-        }
-
-        .contact {
-            background-color: crimson;
-            color: white;
-            border-radius: 5px;
-            padding: 5px 14px;
-        }
-        .navbar{
-            background-color: white;
-        }
-        #footer {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer img {
-            width: 40px;
-        }
-
-        #logo {
-            width: 35px;
-            color: #6f6f70;
-            ;
-        }
-
-        .footer i {
-
-            font-size: 25px;
-            margin: 5px;
-        }
-
-        .footer {
-            background-color: #eee;
-            color: black;
-        }
-
-        a {
-            color: black;
-        }
-
-        a:hover {
-            color: brown;
-            text-decoration: none;
-        }
-
-        .footer i:hover {
-            cursor: pointer;
-            color: crimson;
-        }
-
-        .footer h3 {
-            display: inline-block;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-2 pt-3 header">
-
-        <a class="navbar-brand  logo d-flex align-items-center" href="#">
-            <img src="./applex assets/applex logo.png" alt="" id="logo"> &nbsp;
-            <div style="display: flex; flex-direction: column;">
-                <h3 style="margin: 0; font-weight: lighter;">applex.in</h3>
-                <!-- <p style="margin: 0; font-size: 12px;" id="tag">Your Ultimate Destination for Seamless Development</p> -->
-            </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blog</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a> -->
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-
-            </ul>
-            <button type="button" class="btn contact" onclick="window.open('contactapplex.html')">Contact</button>
-        </div>
-    </nav>
+.city{
+    /* background-image: url(./applex\ assets/city.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    
+}
 
 
-    <!-- head -->
-    <div class="container-fluid head py-5">
-        <div class="row py-5">
-            <div class="col">
-                <h1>Contact Us</h1>
-                <h2 class="py-2">
-                    Seamless app development with applex.in
-                </h2>
-                <p class="py-2">
-                    Bring your mobile app ideas into life with us
-                </p>
-            </div>
-        </div>
-    </div>
+i{
+    font-size: 40px;
+    color: rgb(128, 0, 79);
+}
 
-    <!-- Details -->
+/* .col-4{
+    border: 2px solid black;
+} */
+.tag{
+    
+    
+    
+    padding: 2%;
+    text-align: center;
+}
+.tag h1{
+    background: linear-gradient(rgb(255, 65, 65), rgb(34, 3, 34));
+
+  /* clip hackery */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.brick{
+     /* border: 1px solid black; */
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+}
+.brick:hover{
+    box-shadow: 0 0 15px #eee;
+}
+
+.brick img{
+    width: 20%;
+    height: 30%;
+    object-fit: contain;
+
+}
+.contact-bounce{
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    border-radius: 10px;
+    animation-name: move;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate-reverse;
+    display: flex;
+    flex-direction: column;  
+    z-index: 1000;
+}
+.contact-bounce img:hover{
+    cursor: pointer;
+    color: gray;
+}
+.contact-bounce i:hover{
+    cursor: pointer;
+}
+.contact-bounce i{
+    font-size: 50px;
+    color: green;
+}
+@keyframes move{
+    0%{}
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.contact{
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 14px;
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-collapse ul li{
+        /* text-align: center;s */
+    }
+    .contact{
+        margin: auto;
+    }
+    
+}
+.block {
+
+    width: 170px;
+    height: 10rem;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #eee;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.block img{
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+.a,
+.b,
+.f,
+.g,
+.c,
+.d,
+.e,
+.first,
+.second {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerdiv {
+    /* width: 100%; */
+
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+.xyz {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* width: 30%; */
+}
+#footer{
+    background-color:rgb(41, 41, 41);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer i {
+    font-size: 25px;
+    margin: 5px;
+    color: black;
+}
+.footer i:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.footer{
+    background-color: #eee;
+}
+.footer a{
+    color: black;
+}
+.footer a:hover{
+    text-decoration: none;
+    color: crimson;
+}
+.lottie{
+    width: 400px;
+    height: 250px;
+    margin: auto;
+}
+
+lottie-player{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width: 500px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 55px 20px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+}
+.modal-content input,textarea{
+    display: block;
+    width: 70%;
+    border: 1px solid lightgray;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+.modal-content textarea{
+    min-height: 60px;
+    font-size: 16px;
+}
+.bg-modal h5::after{
+    content: "";
+    border: 1px solid lightgray;
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+@media screen and (max-width : 450px){
+    .modal-content{
+        width: 300px;
+        height: 500px;
+        
+    }
+    h5{
+        font-size: 22px;
+    }
+    .modal-content textarea{
+        min-height: 100px;
+    }
+    .modal-content input,textarea{
+        width: 80%;
+    }
+    .lottie{
+        width: 250px;
+        height: 110px;
+    }
+}
 
 
+.modal-content img{
+    width: 70px;
+    padding: 2px;
+    display: block;
+    margin: 0 auto;
+    
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-weight: normal;
+    font-size : 42px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: black;
+}
+@media screen and (max-width: 800px) {
+    .block {
 
+        width: 150px;
+        height: 9rem;
 
-    <!-- form -->
-    <div class="container">
-        <div class="row py-5 form">
-            <!-- <div class="col-md-7 form-left my-3">
-                <h1 style="font-weight: bold;">Get in Touch </h1>
-                <h4>
-                    Salt Lake, Sector-5,
-                    Kolkata
-                    West Bengal, India
-                </h4>
-                <h4>
-                    Email: contact@applex.in
-                </h4>
-                <h4>
-                    Call Us Now: +91 6290438875
-                </h4>
-            </div> -->
-            <div class="col-md-6 my-3 form-body">
-                <form action="https://formspree.io/f/xqkgraqp" method="POST" enctype="multipart/form-data">
-                    <div class="form-group my-3 py-3">
-                        <h1>Why Waiting? <h1></h1>
-                            Mail us now and get your doubts cleared.
-                            We will revert back to you within 24 hours, guaranteed.</h1>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                        <div style="padding:15px 0px;">
-                            <label>Attatch a File</label> <br>
-                            <input type="file" name="upload">
-                        </div>
+        margin: 0.3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #eee;
+    }
+}
 
+@media screen and (max-width: 650px) {
+    .block {
 
-                    </div>
+        width: 120px;
+        height: 9rem;
 
+        margin: 0.3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 15px #eee;
+    }
+    .review{
+        width: 100%;
+        margin: auto;
+    }
 
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Share your thoughts?</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+}
 
-        </div>
-    </div>
+@media screen and (max-width: 450px) {
+    .block {
 
+        /* width: 75px;
+        height: 3rem;
+        padding: 1px;
+        margin: 0.5rem; */
+      
+    
+    
+        width: 100px;
+        height: 4rem;
+        background-color: white;
+        margin: 0.5rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #eee;
+        padding: 0 8px;
+    }
+    .first,.second{
+        display: none;
+    }
+    .idea{
+       display: inline-block;
+       padding: 8px;
+    }
 
-    <!-- map -->
+}
+@media screen and (max-width: 350px) {
+    .block {
+        width: 80px;
+        height: 4rem;
+        background-color: white;
+        margin: 0.3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #eee;
+        padding: 8px;
+    }
 
-    <div class="box my-3">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14736.291546280538!2d88.42522822674746!3d22.576377126329376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b020703c0d%3A0xece6f8e0fc2e1613!2sSector%20V%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1616426138237!5m2!1sen!2sin"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-    <!-- Footer -->
-
-    <div class="container-fluid d-flex justify-content-center py-5 footer">
-        <div class="row">
-            <div class="col-md-3">
-                <img src="./applex assets/applex logo.png" alt="" id="logo">
-                <h2 style="font-weight:bold">applex.in</h2>
-                <p>Seamless development with applex.in</p>
-            </div>
-            <div class="col-md-3">
-                <h3 style="font-weight:bold">Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="career.html">Careers</a></li>
-                    <li><a
-                            href="https://www.termsofservicegenerator.net/live.php?token=7FQJ7cN28AvU60MqZ0b2KUrxzGGqvsMl">Terms
-                            & Conditions</a></li>
-                    <li><a
-                            href="https://www.privacypolicygenerator.info/live.php?token=RAr46RbL1wa1tThNqRNcDlAXJO9Lo3fT">Privacy
-                            Policy</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3 style="font-weight:bold">Contact Us</h3>
-                <p>Kolkata,West Bengal, India.</p>
-                <p> <span style="font-weight: bolder;">Phone:</span> +91 6290438875</p>
-                <p> <span style="font-weight: bolder;">Email:</span> contact@applex.in</p>
-            </div>
-            <div class="col-md-3">
-                <h3 style="font-weight:bold" class="pb-3">Reach us on</h3>
-                <i class="fab fa-facebook-f" onclick="window.open('https://www.facebook.com/applexTeam/')"></i>
-                <i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/applex.in/')"></i>
-                <i class="fab fa-linkedin-in" onclick="window.open('https://www.linkedin.com/company/applex-in/')"></i>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row" id="footer">
-            <div class="col">
-                <p class="py-3">
-                    Copyright © applex.in | Powered by applex.in | All Rights Reserved
-                </p>
-            </div>
-        </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+}
+.abc:hover{
+    box-shadow: 0 0 30px #eee;
+    cursor: pointer;
+}
