@@ -338,7 +338,8 @@ lottie-player{
     display: block;
     width: 70%;
     border: 1px solid lightgray;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 5px;
     border-radius: 2px;
 }
 .modal-content textarea{
